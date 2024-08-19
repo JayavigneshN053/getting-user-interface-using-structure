@@ -1,0 +1,24 @@
+#include<stdio.h>
+struct shopkeeper{
+    int rno;
+    char author[50];
+    float price;
+};
+typedef struct shopkeeper sk;
+int main(){
+
+    int n;
+    scanf("%d",&n);
+     sk a[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&a[i].rno);
+        scanf("%s",a[i].author);
+        scanf("%f",&a[i].price);
+    }
+    for(int i=0;i<n;i++){
+        printf("%d\n",a[i].rno);
+        printf("%s\n",a[i].author);
+        printf("%f",a[i].price);
+    }
+    return 0;
+}
